@@ -69,6 +69,8 @@ namespace InterfaceExercise
 
             foreach (IVehicle vehicle in VehicleList) 
             {
+                Console.WriteLine("Vehicle Type:");
+                Console.WriteLine(vehicle);
                 Console.WriteLine($"Door: {vehicle.Door}");
                 Console.WriteLine($"Headlights: {vehicle.Headlights}");
                 Console.WriteLine($"Trunk: {vehicle.Trunk}");
@@ -78,6 +80,8 @@ namespace InterfaceExercise
 
             foreach (ICompany company in CompanyList)
             {
+                Console.WriteLine("Vehicle Company:");
+                Console.WriteLine(company);
                 Console.WriteLine($"Logo: {company.Logo}");
                 Console.WriteLine($"Nation Of Origin: {company.NationOfOrigin} ");
                 Console.WriteLine($"");
@@ -85,6 +89,7 @@ namespace InterfaceExercise
 
             foreach (Car car in CarList) 
             { 
+              Console.WriteLine("Exclusive to the Car");
               Console.WriteLine($"Is Convertible: {car.IsConvertable}");
               Console.WriteLine($"Is Luxury: {car.IsLuxury}");
               Console.WriteLine($"");
@@ -92,6 +97,7 @@ namespace InterfaceExercise
 
             foreach (SUV SUV in SuvList) 
             {
+              Console.WriteLine("Exclusive to the SUV");
               Console.WriteLine($"Passanger Capacity: {SUV.PassangerCapacity}");
               Console.WriteLine($"Has Roof Rack: {SUV.HasRoofRack}");
               Console.WriteLine($"");
@@ -99,6 +105,7 @@ namespace InterfaceExercise
 
             foreach (Truck Truck in TruckList) 
             {
+              Console.WriteLine("Exclusive to the Truck");
               Console.WriteLine($"Has Pullbar: {Truck.HasPullBar}");
               Console.WriteLine($"Tow Capacity: {Truck.TowCapacity}");
               Console.WriteLine($"");
